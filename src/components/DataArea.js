@@ -12,10 +12,10 @@ const DataArea = () => {
     filteredUsers: [],
     headings: [
       { name: "Image", width: "10%", order: "descend" },
-      { name: "name", width: "10%", order: "descend" },
-      { name: "phone", width: "20%", order: "descend" },
-      { name: "email", width: "20%", order: "descend" },
-      { name: "dob", width: "10%", order: "descend" }
+      { name: "Name", width: "10%", order: "descend" },
+      { name: "Phone", width: "20%", order: "descend" },
+      { name: "Email", width: "20%", order: "descend" },
+      { name: "DOB", width: "10%", order: "descend" }
     ]
   });
 
