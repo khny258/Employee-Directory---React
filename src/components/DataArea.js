@@ -40,9 +40,9 @@ const DataArea = () => {
           return -1;
         }
         // numerically
-        else if (heading === "name") {
+        else if (heading === "Name") {
           return a[heading].first.localeCompare(b[heading].first);
-        } else if (heading === "dob") {
+        } else if (heading === "DOB") {
           return a[heading].age - b[heading].age;
         } else {
           return a[heading].localeCompare(b[heading]);
@@ -55,9 +55,9 @@ const DataArea = () => {
           return -1;
         }
         // numerically
-        else if (heading === "name") {
+        else if (heading === "Name") {
           return b[heading].first.localeCompare(a[heading].first);
-        }else if (heading === "dob") {
+        }else if (heading === "DOB") {
           return b[heading].age - a[heading].age;
         }  else {
           return b[heading].localeCompare(a[heading]);
