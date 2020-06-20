@@ -12,10 +12,10 @@ const DataArea = () => {
     filteredUsers: [],
     headings: [
       { name: "Image", width: "10%", order: "descend" },
-      { name: "Name", width: "10%", order: "descend" },
-      { name: "Phone", width: "20%", order: "descend" },
-      { name: "Email", width: "20%", order: "descend" },
-      { name: "DOB", width: "10%", order: "descend" }
+      { name: "name", width: "10%", order: "descend" },
+      { name: "phone", width: "20%", order: "descend" },
+      { name: "email", width: "20%", order: "descend" },
+      { name: "dob", width: "10%", order: "descend" }
     ]
   });
 
@@ -40,9 +40,9 @@ const DataArea = () => {
           return -1;
         }
         // numerically
-        else if (heading === "Name") {
+        else if (heading === "name") {
           return a[heading].first.localeCompare(b[heading].first);
-        } else if (heading === "DOB") {
+        } else if (heading === "dob") {
           return a[heading].age - b[heading].age;
         } else {
           return a[heading].localeCompare(b[heading]);
@@ -55,9 +55,9 @@ const DataArea = () => {
           return -1;
         }
         // numerically
-        else if (heading === "Name") {
+        else if (heading === "name") {
           return b[heading].first.localeCompare(a[heading].first);
-        }else if (heading === "DOB") {
+        }else if (heading === "dob") {
           return b[heading].age - a[heading].age;
         }  else {
           return b[heading].localeCompare(a[heading]);
